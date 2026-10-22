@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: product_cost_history
+    columns:
+      - name: sku
+        data_tests:
+          - not_null
+      - name: valid_from
+        data_tests:
+          - not_null
+      - name: unit_cost_sar
+        data_tests:
+          - not_null
+
+  - name: weekly_margin
+    columns:
+      - name: iso_week
+        data_tests:
+          - not_null
+      - name: city
+        data_tests:
+          - not_null
+      - name: category
+        data_tests:
+          - not_null
